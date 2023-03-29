@@ -1,0 +1,16 @@
+.wrapper{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.layout{
+  width: 100%;
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+}
