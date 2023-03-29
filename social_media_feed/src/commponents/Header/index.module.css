@@ -1,0 +1,22 @@
+.navigation{
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111;
+}
+.link{
+ 
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right:20px;
+
+}
+a{
+   text-decoration: none;
+}
