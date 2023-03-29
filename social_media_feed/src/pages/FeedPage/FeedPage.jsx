@@ -8,18 +8,19 @@ const FeedPage = () => {
   const [filteredPosts, setFilteredPosts] = useState(posts);
 
   function PostList({ filteredPosts }) {
-    var date = new Date("2013-03-10T02:00:00Z");
-    date.toISOString().substring(0, 10);
     return (
       <div>
-        
         {filteredPosts.map((post) => (
           <div className={Classes.wrapper} key={post.id}>
-            <img className={Classes.img} src={post.userImage} alt={post.username} />
+            <img
+              className={Classes.img}
+              src={post.userImage}
+              alt={post.username}
+            />
             <div>{post.username}</div>
             <div>{post.timestamp}</div>
             <div>{post.text}</div>
-            <Link to={`/${post.id}`}>View post</Link>
+            <Link to={`/post/${post.id}`}>View post</Link>
           </div>
         ))}
       </div>
